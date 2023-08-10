@@ -12,7 +12,7 @@ Sending a transaction with inputData through Nautilus Testnet
 
 Step 1: clone and run
 ```
-git clone git@github.com:SavonarolaBit/bug-tx-inputData.git && npm i && npm run dev
+git clone git@github.com:SavonarolaBit/bug-tx-inputData.git && cd bug-tx-inputData && npm i && npm run dev
 ```
 
 Step 2: press "send 1 erg to self with oracle box (ERROR)"
