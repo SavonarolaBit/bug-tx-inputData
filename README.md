@@ -1,38 +1,18 @@
-# create-svelte
+# Bug report
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Sending a transaction with inputData through Nautilus Testnet
+0.8.2 produces the following error: 
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+```
+{code: -2, info: '[GraphQL] ERGO_NODE_ADDRESS is undefined in .env file.'}
 ```
 
-## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## How to reproduce:
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+Step 1: clone and run
+```
+git clone git@github.com:SavonarolaBit/bug-tx-inputData.git && npm i && npm run dev
 ```
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Step 2: press "send 1 erg to self with oracle box (ERROR)"
